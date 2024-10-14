@@ -122,15 +122,15 @@ levels(as.factor(to.plot$POP))
 
 
 shapes <- c(1,16,16,16,16,16,16,16,16,2,16,16,16,3,4,5,6,7,16,16)
-c_palette <- c("grey","#00FF7B", "#FF3500", "#C100FF", "#2300FF", "#23FF00", "#F6FF00",
-               "#007BFF", "#F600FF", "grey", "#00FFE5", "black", "#00FF46","grey","grey","grey","grey","grey" , "#FF9E00", 
-               "#00FF12", "#FF6A00", "#FF0000",
+c_palette <- c("grey","#00FF7B", "#FF3500", "#C100FF", "#2300FF", "brown", "#F6FF00",
+               "#007BFF", "#F600FF", "grey", "#00FFE5", "black", "darkgreen","grey","grey","grey","grey","grey" , "#FF9E00", 
+               "#8B864E", "#FF6A00", 
                "#FF006A","#FF0035","#0012FF","#FFD300","#58FF00","#5800FF","#8D00FF",
-               "darkgrey","#C1FF00","#0046FF","#8DFF00","#FF00D3","#FF009E","#00B0FF")
+               "darkgrey","#C1FF00","#0046FF","#8DFF00","#FF009E","#00B0FF")
 
 plot.pca(to.plot, ss, POP ,SUPERPOP) 
 
-ggsave("PLOT.EUR.SEPTIEMBRE.",
+ggsave("PLOT.EUR.OCTUBRE.",
        plot = last_plot(),
        device = "png",
        scale = 1,
@@ -215,17 +215,25 @@ shapes <- c(1,16,16,16,16,
             16,16,7,8,9,
             11,12,16,16
             )
+c_palette <- c("grey","#00FF7B", "#FF3500", "#C100FF", "#2300FF", 
+               "brown", "#F6FF00","#007BFF", "#F600FF", "grey",
+               "grey","grey", "#00FFE5","grey","grey", 
+               "black", "darkgreen","grey","grey","grey",
+               "grey","grey", "#FF9E00","#8B864E", "#FF6A00", 
+               "#FF006A","#FF0035","#0012FF","#FFD300","#58FF00","#5800FF","#8D00FF",
+               "darkgrey","#C1FF00","#0046FF","#8DFF00","#FF009E","#00B0FF")
+
 c_palette <- c("grey","#00FF7B", "#FF3500", "#C100FF", "#2300FF",
-               "#23FF00", "#F6FF00", "#007BFF", "#F600FF", "grey", 
+               "darkgreen", "#F6FF00", "#007BFF", "#8B864E", "grey", 
                "grey", "grey", "#00FFE5", "grey","grey", 
-               "black","#00FF46","grey","grey","grey",
+               "black","brown","grey","grey","grey",
                "grey", "grey", "#FF9E00", "#00FF12", "#FF6A00", "#FF0000",
                "#FF006A","#FF0035","#0012FF","#FFD300","#58FF00","#5800FF","#8D00FF",
                "darkgrey","#C1FF00","#0046FF","#8DFF00","#FF00D3","#FF009E","#00B0FF")
 
 plot.pca(to.plot, POP, POP)  
 
-ggsave("PLOT.EUROPE.ANCIENT.Sept",
+ggsave("PLOT.EUROPE.ANCIENT.OCTB",
        plot = last_plot(),
        device = "svg",
        scale = 1,
